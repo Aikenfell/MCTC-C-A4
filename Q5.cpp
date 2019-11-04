@@ -12,8 +12,8 @@ double wage(float rate, float hours = 0) {
 }
 
 int main() {
-    char go = 'y';
-    while ((go == 'y')) {
+    char go = 'Y';
+    do {
         string name;
         float rate;
         char ot;
@@ -37,8 +37,8 @@ int main() {
             cout << "\nName : " << name << "\tWages : " << total;
             break;
         cout << "\nContinue (y or n)?";
-        cin >> cont;
+        cin >> go;
 
         }
-    }
+    }while ((go == 'Y'));
 }
